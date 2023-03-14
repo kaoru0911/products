@@ -11,3 +11,10 @@ print(products)
 
 for p in products:
 	print(p[0], '的價格是', p[1])
+
+# 'abc' + '123' = 'abc123'
+# 'abc' * 3 = 'abcabcabc'
+
+with open('products.csv', 'w') as f:
+	for p in products:
+		f.write(p[0] + ',' + p[1] + '\n')
